@@ -1,0 +1,2 @@
+recursive-include rhaptos *
+global-exclude *pyc

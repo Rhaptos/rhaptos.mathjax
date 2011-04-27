@@ -1,0 +1,12 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:browser="http://namespaces.zope.org/browser"
+           xmlns:five="http://namespaces.zope.org/five">
+           i18n_domain="rhaptos">
+
+  <five:registerPackage package="." initialize=".initialize" />
+
+  <browser:resourceDirectory
+      name="mathjax"
+      directory="static/mathjax"
+      />
+</configure>
