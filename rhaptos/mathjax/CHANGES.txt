@@ -1,2 +1,3 @@
-mathjax-0.1
+mathjax-1.0
   - split off RhaptosContent product
+  - track upstream version num as much as possible
