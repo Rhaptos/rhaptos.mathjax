@@ -126,7 +126,9 @@
       } else {
         math = script.innerHTML.replace(/^\s+/,"").replace(/\s+$/,"");
         if (BROWSER.isMSIE) 
-          {math = math.replace(/(&nbsp;)+$/,"").replace(/&amp;/g,"&").replace(/&lt;/g,"&amp;lt;")}
+          {math = math.replace(/(&nbsp;)+$/,"").replace(/&amp;/g,"&");
+           math = math.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&");;
+          }
         else if (BROWSER.isKonqueror)
           {math = math.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&")}
         math = this.prefilterMath(math,script);
