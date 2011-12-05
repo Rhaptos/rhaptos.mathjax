@@ -1,3 +1,6 @@
+mathjax-1.1
+  - upgrade mathjax version to 1.1, porting bugfixes forward
+
 mathjax-1.0
   - split off RhaptosContent product
   - track upstream version num as much as possible
